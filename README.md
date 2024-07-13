@@ -9,11 +9,12 @@ The CEO of Company XYZ is requesting a chatbot that uses sales documents to answ
 
 ## LLM Architecture Application
 ![image](https://github.com/user-attachments/assets/9fbbd370-81ba-4298-be25-a207dfd73be4)
-1. We are using Amazon S3 bucket to upload all the pdf files that exist. The current process is fully manually so each POs would be upload by the sales department.
-2. Using the LangChain framework to extract and pre-process data from the S3.
-3. We are using the Pre-Trained Sentence Tranformer Model for text embedding from Hugging Face (Open Source) 'all-MiniLM-L6-v2'.
-4. For DBS we are using an Amazon RDS Postgres with pgvector.
-5. The function of our second lambda is to retrieve information from de vector database using a vector embedding technique to extract the relation between the question and LLaMa-2-7B.
-6. The function of Amazon Bedrock is to store Foundation Model LLaMa-2 with 7 billion parameter.
-7. The user represent the question and the response that he is receiving, it coul be and application.
+1. **Amazon S3 for PDF Uploads**: Our sales department manually uploads all purchase orders (POs) as PDF files to an Amazon S3 bucket.
+2. **Data Extraction and Preprocessing with LangChain**: We utilize the LangChain framework to extract and preprocess data from the PDFs stored in S3.
+3. **Text Embedding with Hugging Face Model**: We use the pre-trained 'all-MiniLM-L6-v2' Sentence Transformer model from Hugging Face to generate text embeddings.
+4. **Database Storage with Amazon RDS Postgres**: Our database system is Amazon RDS Postgres, enhanced with the pgvector extension for storing and querying vector data.
+5. **Lambda Function for Vector Database Retrieval**: A second Lambda function retrieves information from the vector database, leveraging vector embedding techniques to correlate the user’s question with the LLaMa-2-7B model.
+6. **Foundation Model Storage with Amazon Bedrock**: We use Amazon Bedrock to store the LLaMa-2-7B foundation model, which has 7 billion parameters.
+7. **User Interaction via Application**: The application interfaces with the user, allowing them to pose questions and receive responses generated through the system
 
+## Architecture Cost
