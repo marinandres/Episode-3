@@ -22,7 +22,7 @@ Please note that the architecture I describe is not only suitable for Company XY
 
 | Service    | Dimension | Description | 
 | --------- | ------- | ------- |
-| first     |         |         |
+| Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres    |         |
 |           |         |         |
 |           |         |         |
 |           |         |         |
