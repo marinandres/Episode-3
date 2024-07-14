@@ -18,3 +18,14 @@ The CEO of Company XYZ is requesting a chatbot that uses sales documents to answ
 7. **User Interaction via Application**: The application interfaces with the user, allowing them to pose questions and receive responses generated through the system
 
 ## Architecture Cost
+
+## Reference
+
+https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md
+https://medium.com/@abonia/deploying-a-rag-application-in-aws-lambda-using-docker-and-ecr-08e246a7c515
+https://github.com/aws-samples/rds-postgresql-pgvector?tab=readme-ov-file
+https://github.com/aws-samples/rag-with-amazon-bedrock-and-pgvector?tab=readme-ov-file
+https://github.com/aws-samples/text-embeddings-pipeline-for-rag
+https://community.aws/content/2bi5tqITxIperTzMsD3ohYbPIA4/easy-rag-with-amazon-bedrock-knowledge-base
+https://python.langchain.com/v0.2/docs/integrations/llms/bedrock/
+https://medium.com/@tahir.rauf/similarity-search-using-langchain-and-bedrock-4140b0ae9c58
