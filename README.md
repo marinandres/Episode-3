@@ -19,6 +19,18 @@ The CEO of Company XYZ is requesting a chatbot that uses sales documents to answ
 
 ## Architecture Cost
 Please note that the architecture I describe is not only suitable for Company XYZ but also incorporates two of the most commonly used AI/ML services provided by AWS (Amazon Bedrock and Amazon Sagemaker). While this architecture can be optimized for cost and scalability, I strongly recommend conducting your own research before applying it to your project.
+
+| Service    | Dimension | Description | 
+| --------- | ------- | ------- |
+| first     |         |         |
+|           |         |         |
+|           |         |         |
+|           |         |         |
+|           |         |         |
+|           |         |         |
+|           |         |         |
+
+
 ## Reference
 
 https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md
