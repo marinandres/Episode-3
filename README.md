@@ -22,7 +22,7 @@ Please note that the architecture I describe is not only suitable for Company XY
 
 | Service    | Description | Dimension | 
 | --------- | ------- | ------- |
-| Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres. This database will allows us to stored and search embedding. | Instance: db.m3.medium, vCPU: 1, Memory: 3.75 GiB, Utilization: 100% of the Month, Storage Amount: 30GB, Hour Rate: 0.095 USD, Storage pricing (Monthly): 3.45, Monthly Cost for RDS Proxy (Monthly): 21.90, Amazon RDS PostgreSQL instances cost (Monthly): 69.35, Total Cost of Amazon RDS: 94.70|
+| Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres. This database will allows us to stored and search embedding. | * Instance: db.m3.medium, vCPU: 1, Memory: 3.75 GiB, * Utilization: 100% of the Month * Storage Amount: 30GB * Hour Rate: 0.095 USD * Storage pricing (Monthly): 3.45  * Monthly Cost for RDS Proxy (Monthly): 21.90 * Amazon RDS PostgreSQL instances cost (Monthly): 69.35, Total Cost of Amazon RDS: 94.70|
 |           |         |         |
 |           |         |         |
 |           |         |         |
