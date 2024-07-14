@@ -20,16 +20,22 @@ The CEO of Company XYZ is requesting a chatbot that uses sales documents to answ
 ## Architecture Cost
 Please note that the architecture I describe is not only suitable for Company XYZ but also incorporates two of the most commonly used AI/ML services provided by AWS (Amazon Bedrock and Amazon Sagemaker). While this architecture can be optimized for cost and scalability, I strongly recommend conducting your own research before applying it to your project.
 
-| Service    | Dimension | Description | 
+| Service    | Description | Dimension | 
 | --------- | ------- | ------- |
-| Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa| aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa        |
+| Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres. This database will allows us to stored and search embedding. | Instance: db.m3.medium, vCPU: 1, Memory: 3.75 GiB
+Utilization: 100% of the Month
+Storage Amount: 30GB
+Hour Rate: 0.095 USD
+Storage pricing (Monthly): 3.45
+Monthly Cost for RDS Proxy (Monthly): 21.90
+Amazon RDS PostgreSQL instances cost (Monthly): 69.35
+Total Cost of Amazon RDS: 94.70|
 |           |         |         |
 |           |         |         |
 |           |         |         |
 |           |         |         |
 |           |         |         |
 |           |         |         |
-
 
 ## Reference
 
