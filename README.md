@@ -23,7 +23,7 @@ Please note that the architecture I describe is not only suitable for Company XY
 | Service    | Description | Dimension | 
 | --------- | ------- | ------- |
 | Amazon RDS| Amazon RDS include in May 2023 the use of that pgvector from Postgres. This database will allows us to stored and search embedding. | <p>Instance: db.m3.medium, vCPU: 1, Memory: 3.75 GiB <p> <p> Utilization: 100% of the Month <p> Storage Amount: 30GB <p> Hour Rate: 0.095 USD <p> Storage pricing (Monthly): 3.45 USD <p> Monthly Cost for RDS Proxy (Monthly): 21.90 USD <p> Amazon RDS PostgreSQL instances cost (Monthly): 69.35 USD <p> **Total Cost of Amazon RDS: 94.70 USD** <p>|
-| Amazon Lambda | <p>The first Amazon Lambda function handles data extraction and preprocessing with LangChain, retrieving PDF files stored in the Amazon S3 bucket.<p> The second Amazon Lambda function is responsible for vector database retrieval, helping to find relationships with the received question. This process runs every time a question is asked.<p>|         |
+| Amazon Lambda | <p>The first Amazon Lambda function handles data extraction and preprocessing with LangChain, retrieving PDF files stored in the Amazon S3 bucket.<p> The second Amazon Lambda function is responsible for vector database retrieval, helping to find relationships with the received question. This process runs every time a question is asked.<p>| <p>Container size - 128 MB, 512 MB ephemeral storage <p> 2 Lambda functions used for authorization <p> Container size - 256 MB, 512 MB ephemeral storage, 5 requests per second with 20 seconds average compute time<p> **Total Cost of Amazon Lambda: 20.89 USD**<p> |
 |           |         |         |
 |           |         |         |
 |           |         |         |
