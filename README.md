@@ -34,17 +34,18 @@ This proposed pricing and architecture are tailored to the needs of Company XYZ.
 **Reference that help me create the architecture and logic**
 
 [Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChain](https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md)
-https://medium.com/@abonia/deploying-a-rag-application-in-aws-lambda-using-docker-and-ecr-08e246a7c515
-https://github.com/aws-samples/rds-postgresql-pgvector?tab=readme-ov-file
-https://github.com/aws-samples/rag-with-amazon-bedrock-and-pgvector?tab=readme-ov-file
-https://github.com/aws-samples/text-embeddings-pipeline-for-rag
-https://community.aws/content/2bi5tqITxIperTzMsD3ohYbPIA4/easy-rag-with-amazon-bedrock-knowledge-base
-https://python.langchain.com/v0.2/docs/integrations/llms/bedrock/
-https://medium.com/@tahir.rauf/similarity-search-using-langchain-and-bedrock-4140b0ae9c58
-https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html
-https://www.tecracer.com/blog/2024/04/rag-ai-llm-databases-on-aws-do-not-pay-for-oversized-go-serverless-instead.html
-https://www.finout.io/blog/aws-bedrock-pricing-optimization-guide
-https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html
-https://www.seaflux.tech/blogs/aws-bedrock-models
-https://aws.amazon.com/bedrock/pricing/
-https://aws.amazon.com/s3/pricing/
+[Building AI-powered search in PostgreSQL using Amazon SageMaker and pgvector](https://github.com/aws-samples/rds-postgresql-pgvector?tab=readme-ov-file)
+[RAG with Amazon Bedrock and PGVector on Amazon RDS](https://github.com/aws-samples/rag-with-amazon-bedrock-and-pgvector?tab=readme-ov-file)
+[Text Embeddings Pipeline for Retrieval Augmented Generation (RAG)](https://github.com/aws-samples/text-embeddings-pipeline-for-rag)
+[Easy Serverless RAG with Knowledge Base for Amazon Bedrock](https://community.aws/content/2bi5tqITxIperTzMsD3ohYbPIA4/easy-rag-with-amazon-bedrock-knowledge-base)
+[LangChain Bedrock Documentation](https://python.langchain.com/v0.2/docs/integrations/llms/bedrock/)
+[Generate Embeddings using Amazon Bedrock and LangChain](https://medium.com/@tahir.rauf/similarity-search-using-langchain-and-bedrock-4140b0ae9c58)
+
+**Reference that help me have a cost estimation**
+
+[Generative AI Application Builder on AWS](https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html)
+[RAG AI-LLM Databases on AWS: do not pay for oversized, go Serverless instead](https://www.tecracer.com/blog/2024/04/rag-ai-llm-databases-on-aws-do-not-pay-for-oversized-go-serverless-instead.html)
+[Understanding AWS Bedrock: Basics, Pricing, and Cost Optimization](https://www.finout.io/blog/aws-bedrock-pricing-optimization-guide)
+[What is AWS Bedrock? AWS Bedrock Pricing Simplified](https://www.seaflux.tech/blogs/aws-bedrock-models)
+[Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/)
+[Amazon S3 pricing](https://aws.amazon.com/s3/pricing/)
