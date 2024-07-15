@@ -32,7 +32,7 @@ This proposed pricing and architecture are tailored to the needs of Company XYZ.
 
 ## Reference
 **Reference that help me create the architecture and logic**
-<p> [Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChain](https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md) <p> 
+[Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChain](https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md)
 https://medium.com/@abonia/deploying-a-rag-application-in-aws-lambda-using-docker-and-ecr-08e246a7c515
 https://github.com/aws-samples/rds-postgresql-pgvector?tab=readme-ov-file
 https://github.com/aws-samples/rag-with-amazon-bedrock-and-pgvector?tab=readme-ov-file
