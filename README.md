@@ -26,12 +26,13 @@ Please note that the architecture I describe is not only suitable for Company XY
 | Amazon Lambda | <p>The first Amazon Lambda function handles data extraction and preprocessing with LangChain, retrieving PDF files stored in the Amazon S3 bucket.<p> The second Amazon Lambda function is responsible for vector database retrieval, helping to find relationships with the received question. This process runs every time a question is asked.<p>| <p>Container size - 128 MB, 512 MB ephemeral storage <p> 2 Lambda functions used for authorization <p> Container size - 256 MB, 512 MB ephemeral storage, 5 requests per second with 20 seconds average compute time<p> **Total Cost of Amazon Lambda: 20.89 USD**<p> |
 | Amazon SageMaker | This service includes a SageMaker Studio Notebook for text embedding, utilizing the sentence transformer model 'all-MiniLM-L6-v2'. | <p> Instance: ml.g4dn.12xlarge, GPU: 4, Memory: 192 GiB, vCPU: 48<p> **Total Cost of Amazon SageMaker: 508.56 USD** <p>|
 | Amazon BedRock | When using Amazon Bedrock to integrate the LLaMa 2 13B model (the one currently available), one of the challenges is estimating the number of tokens we will provide on a daily basis. | Approximation Cost **Total Cost of Amazon Bedrock: 21.87 USD**        |
-| Amazon S3 | Amazon S3 bucket will receive a POST request for uploading each pdf and GET request to grab each pdf by the Lambda Function and breaking down to upload to our pgvector database | <p>*Calculation based on S3 Standard, Object Lambda, Data Transfer*<p> Storage Data: 30GB<p> S3 Standard cost (Monthly): 0.77<p>Data Transfer cost (Monthly): 2.70<p> **Total Cost of Amazon Lambda: 3.48 USD** <p> |
+| Amazon S3 | The Amazon S3 bucket will receive POST requests to upload each PDF and GET requests to retrieve them. A Lambda function will then process these PDFs, breaking them down and uploading the data to our pgvector database. | <p>*Calculation based on S3 Standard, Object Lambda, Data Transfer*<p> Storage Data: 30GB<p> S3 Standard cost (Monthly): 0.77<p>Data Transfer cost (Monthly): 2.70<p> **Total Cost of Amazon Lambda: 3.48 USD** <p> |
 
+This proposed pricing and architecture are tailored to the needs of Company XYZ. From the analysis, it appears that Amazon SageMaker is more expensive for our use case. We might be able to reduce costs by optimizing our approach or considering a switch to Amazon Bedrock, especially since we already have the Lambda function in place (Next Steps). **The total estimated monthly cost is $649.50 USD**. There are additional elements that might be needed, such as an API Gateway to facilitate direct communication with the web, but the current proposal focuses solely on model development, data extraction, and storage.
 
 ## Reference
-
-https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md
+**Reference that help me create the architecture and logic**
+[Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChain](https://github.com/aws-samples/llm-apps-workshop/blob/main/blogs/rag/blog_post.md)
 https://medium.com/@abonia/deploying-a-rag-application-in-aws-lambda-using-docker-and-ecr-08e246a7c515
 https://github.com/aws-samples/rds-postgresql-pgvector?tab=readme-ov-file
 https://github.com/aws-samples/rag-with-amazon-bedrock-and-pgvector?tab=readme-ov-file
@@ -41,3 +42,8 @@ https://python.langchain.com/v0.2/docs/integrations/llms/bedrock/
 https://medium.com/@tahir.rauf/similarity-search-using-langchain-and-bedrock-4140b0ae9c58
 https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html
 https://www.tecracer.com/blog/2024/04/rag-ai-llm-databases-on-aws-do-not-pay-for-oversized-go-serverless-instead.html
+https://www.finout.io/blog/aws-bedrock-pricing-optimization-guide
+https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html
+https://www.seaflux.tech/blogs/aws-bedrock-models
+https://aws.amazon.com/bedrock/pricing/
+https://aws.amazon.com/s3/pricing/
