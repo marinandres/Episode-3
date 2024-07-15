@@ -41,3 +41,5 @@ https://github.com/aws-samples/text-embeddings-pipeline-for-rag
 https://community.aws/content/2bi5tqITxIperTzMsD3ohYbPIA4/easy-rag-with-amazon-bedrock-knowledge-base
 https://python.langchain.com/v0.2/docs/integrations/llms/bedrock/
 https://medium.com/@tahir.rauf/similarity-search-using-langchain-and-bedrock-4140b0ae9c58
+https://docs.aws.amazon.com/solutions/latest/generative-ai-application-builder-on-aws/cost.html
+https://www.tecracer.com/blog/2024/04/rag-ai-llm-databases-on-aws-do-not-pay-for-oversized-go-serverless-instead.html
